@@ -1,3 +1,4 @@
 # LeikjaForritun Github svæði
 <br>
-[Svör við spurningum](Verkefni1/Svör.md)
+[Svör við spurningum](LeikjaForritun/Verkefni1
+/Svör.md)
