@@ -1,3 +1,3 @@
 # LeikjaForritun Github svæði
 <br>
-[12](./Verkefni1/Scripts)
+[12](./Verkefni1/scripts)
