@@ -1,3 +1,5 @@
+[12](./Verkefni1/scripts/)<br>
+
 Fyrsti leikurinn úr unit test eitt<br>
 bætti við Jump function fyrir bílinn afþví afhverju ekki?<br>
 
