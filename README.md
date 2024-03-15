@@ -1,4 +1,4 @@
-#Verkefni 1
+# Verkefni 1
 <br>
 [Myndbönd fyrir Leiki](./Verkefni1/verkefni1.md)
 <br>
