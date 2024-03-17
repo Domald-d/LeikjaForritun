@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class MoveLeft : MonoBehaviour
 {
-    // private breytur til ağ láta hluti/bakgrun hreyfast
+    // private breytur til aÃ° lÃ¡ta hluti/bakgrun hreyfast
     private float speed = 30;
     private PlayerController playerControllerScript;
     // Start is called before the first frame update
     void Start()
     {
-        // viğ látum hlut/bakgrun hreyfast í átt ağ player
+        // viÃ° lÃ¡tum hlut/bakgrun hreyfast Ã­ Ã¡tt aÃ° player
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
-    // Update is called once per frame
+    
     private float leftBound = -15;
     void Update()
     {
-        // if skilyrği til ağ skoğa hvort leik er lokiğ
+        // if skilyrÃ°i til aÃ° skoÃ°a hvort leik er lokiÃ°
         if(playerControllerScript.GameOver == false)
         {
             transform.Translate(Vector3.left * Time.deltaTime * speed);
-        }
+        }//if skilyrÃ°i til aÃ° eyÃ°a hindrunum svo aÃ° viÃ° spawnum ekki endalaust af Ã¾eim
         if (transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
         {
             Destroy(gameObject);
