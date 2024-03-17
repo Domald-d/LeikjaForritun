@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// kalla á rigidbody component fyrir hopp svo að spilari getur ekki hoppað nema hann sé á jörðinni
+// kalla Ã¡ rigidbody component fyrir hopp svo aÃ° spilari getur ekki hoppaÃ° nema hann sÃ© Ã¡ jÃ¶rÃ°inni
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
 {
@@ -14,25 +14,25 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem dirtParticle;
     public AudioClip jumpSound;
     public AudioClip crashSound;
-    public Vector3 jump; // Breyta til að láta bíl hoppa
+    public Vector3 jump; // Breyta til aÃ° lÃ¡ta bÃ­l hoppa
     public float JumpForce = 2.0f;
     public bool GameOver;
     // Start is called before the first frame update
     void Start()
     {
-        // breytur fyrir rigidbody,hopp og animations og hljóð
+        // breytur fyrir rigidbody,hopp og animations og hljÃ³Ã°
         rb = GetComponent<Rigidbody>();
-        jump = new Vector3(0.0f, 4.0f, 0.0f); // hérna skilgreinum við að hlutur hoppar upp
+        jump = new Vector3(0.0f, 4.0f, 0.0f); // hÃ©rna skilgreinum viÃ° aÃ° hlutur hoppar upp
         playerAnim = GetComponent<Animator>();
         playerAudio = GetComponent<AudioSource>();
 
     }
-    //breyta fyrir hvort spilari sé á jörð
+    //bool breyta fyrir hvort spilari sÃ© Ã¡ jÃ¶rÃ°
     public bool isGrounded;
     // Update is called once per frame
     void Update()
     {
-        // if skilyrði til að skoða ef spilari ýtir á space þá hoppum við og keyrum nokkrar breytur
+        // if skilyrÃ°i til aÃ° skoÃ°a ef spilari Ã½tir Ã¡ space Ã¾Ã¡ hoppum viÃ° og keyrum nokkrar breytur
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !GameOver)
         {
             rb.AddForce(jump * JumpForce, ForceMode.Impulse);
@@ -43,16 +43,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // private void fall til að skoða collision á hlut og keyra breytur
+    // private void fall til aÃ° skoÃ°a collision Ã¡ hlut og keyra breytur
     private void OnCollisionEnter(Collision collision)
     {
-
+//hÃ©rna skoÃ°um viÃ° hvort spilari sÃ© Ã¡ jÃ¶rÃ°
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
             dirtParticle.Play();
         }else if (collision.gameObject.CompareTag("Obstacle"))
-        {
+        {//hÃ©r skoÃ°um viÃ° hvort spilari snertir hindrun og leik er lokiÃ°
             Debug.Log("Game Over");
             GameOver = true;
             playerAnim.SetBool("Death_b", true);
