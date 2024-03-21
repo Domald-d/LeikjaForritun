@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem dirtParticle;
     public AudioClip jumpSound;
     public AudioClip crashSound;
-    public Vector3 jump; // Breyta til að láta bíl hoppa
+    public Vector3 jump;
     public float JumpForce = 2.0f;
     public bool GameOver;
     // Start is called before the first frame update
