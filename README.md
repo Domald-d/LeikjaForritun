@@ -5,7 +5,8 @@
 
 
 # Verkefni 2
-<br>
+[Myndband fyrir Leik](./Verkefni2/verkefni2.md)<br>
+[Scriptur fyrir leik](./Verkefni2/Scripts/)<br>
 
 # Verkefni 3
 
