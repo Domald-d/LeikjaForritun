@@ -9,6 +9,8 @@
 [Scriptur fyrir leik](./Verkefni2/Scripts/)<br>
 
 # Verkefni 3
+[Myndband fyrir leik](./Verkefni3/verkefni3.md)<br>
+[Scriptur fyrir leik](./Verkefni3/Scripts)<br>
 
 # Verkefni 4
 
