@@ -13,5 +13,7 @@
 [Scriptur fyrir leik](./Verkefni3/Scripts)<br>
 
 # Verkefni 4
+[Myndband Fyrir Leik](./Verkefni4/verkefni4.md)<br>
+[Scriptur fyrir leik](./Verkefni4/Scripts)<br>
 
 # Verkefni 5
