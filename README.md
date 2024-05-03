@@ -17,3 +17,5 @@
 [Scriptur fyrir leik](./Verkefni4/Scripts)<br>
 
 # Verkefni 5
+[Myndband fyrir Leik](./Verkefni5/verkefni5.md)<br>
+[Scriptur fyrir leik](./Verkefni5/Scripts)<br>
